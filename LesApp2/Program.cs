@@ -20,7 +20,7 @@ namespace LesApp2
             Account account = new Account(rnd.Next(0, int.MaxValue));
 
             // info
-            Console.WriteLine($"\n\tДепутатський каунт створено з сумою {account.Amount:N0} грн.");
+            Console.WriteLine($"\n\tДепутатський акаунт створено з сумою {account.Amount:N0} грн.");
 
             // додавання подій
             account.EventAdded += account.ShowMessage;
@@ -33,7 +33,7 @@ namespace LesApp2
             account.Withdraw(rnd.Next(1, ushort.MaxValue));
 
             // результат рахунку
-            Console.WriteLine($"\n\ttДепутатський акаунт має наступну суму {account.Amount:N0} грн.");
+            Console.WriteLine($"\n\tДепутатський акаунт має наступну суму {account.Amount:N0} грн.");
 
             // repeat
             DoExitOrRepeat();
